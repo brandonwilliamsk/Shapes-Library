@@ -1,4 +1,4 @@
-package org.example
+package shapes
 
 class Point(private var x: Double, private var y: Double) {
     fun clone(): Point = Point(x, y)
