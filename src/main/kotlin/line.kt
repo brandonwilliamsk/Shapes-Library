@@ -1,4 +1,4 @@
-package org.example
+package shapes
 
 class line(private val point1: Point, private val point2: Point) {
     fun getPoint1(): Point = point1
