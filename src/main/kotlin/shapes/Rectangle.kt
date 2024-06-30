@@ -1,5 +1,6 @@
 package shapes
-
+import geometry.AreaCalculator
+import geometry.Point
 import kotlin.math.abs
 
 open class Rectangle(private val topLeft: Point, private val bottomRight: Point) : Shape() {

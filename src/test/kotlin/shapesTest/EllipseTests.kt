@@ -1,0 +1,4 @@
+package shapesTest
+
+class EllipseTests {
+}

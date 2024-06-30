@@ -1,4 +1,5 @@
 package shapes
+import geometry.Point
 
 abstract class Shape {
     abstract fun move(deltaX: Double, deltaY: Double)

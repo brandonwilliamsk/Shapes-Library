@@ -1,4 +1,4 @@
-package shapes
+package geometry
 
 object AreaCalculator {
     fun rectangleArea(width: Double, height: Double): Double = width * height

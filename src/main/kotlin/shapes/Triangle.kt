@@ -1,5 +1,8 @@
 package shapes
 
+import geometry.AreaCalculator
+import geometry.Point
+
 class Triangle(private val pointA: Point, private val pointB: Point, private val pointC: Point) : Shape() {
     init {
         val area = AreaCalculator.triangleArea(pointA, pointB, pointC)

@@ -1,4 +1,4 @@
-package shapes
+package geometry
 
 class Point(private var x: Double, private var y: Double) {
     fun clone(): Point = Point(x, y)

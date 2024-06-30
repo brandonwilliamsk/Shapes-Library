@@ -1,4 +1,4 @@
-package shapes
+package geometry
 
 class Line(private val point1: Point, private val point2: Point) {
     fun getPoint1(): Point = point1

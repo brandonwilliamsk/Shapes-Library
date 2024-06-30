@@ -1,0 +1,4 @@
+package geometryTests
+
+class LineTests {
+}
