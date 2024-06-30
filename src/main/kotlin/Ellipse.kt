@@ -9,5 +9,3 @@ open class Ellipse(private val center: Point, private val radiusX: Double, priva
 
     override fun calculateArea(): Double = AreaCalculator.ellipseArea(radiusX, radiusY)
 }
-
-class Circle(center: Point, radius: Double) : Ellipse(center, radius, radius)
