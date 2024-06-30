@@ -1,6 +1,6 @@
 package geometry
 
-class Point(private var x: Double, private var y: Double) {
+data class Point(private var x: Double, private var y: Double) {
     fun clone(): Point = Point(x, y)
     fun getX(): Double = x
     fun getY(): Double = y
