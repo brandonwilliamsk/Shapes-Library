@@ -22,4 +22,5 @@ open class Rectangle(private val topLeft: Point, private val bottomRight: Point)
         val height = abs(bottomRight.getY() - topLeft.getY())
         return AreaCalculator.rectangleArea(width, height)
     }
+
 }

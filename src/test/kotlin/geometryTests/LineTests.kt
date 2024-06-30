@@ -1,3 +1,4 @@
+package geometryTests
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import geometry.Point
