@@ -2,7 +2,7 @@ package shapes
 
 import kotlin.math.abs
 
-class Rectangle(private val topLeft: Point, private val bottomRight: Point) : Shape() {
+open class Rectangle(private val topLeft: Point, private val bottomRight: Point) : Shape() {
     init {
         if (topLeft.getX() == bottomRight.getX() || topLeft.getY() == bottomRight.getY()) {
             throw IllegalArgumentException("A rectangle cannot have 0 width or height")
