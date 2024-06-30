@@ -1,6 +1,6 @@
 package shapes
 
-class line(private val point1: Point, private val point2: Point) {
+class Line(private val point1: Point, private val point2: Point) {
     fun getPoint1(): Point = point1
     fun getPoint2(): Point = point2
 
