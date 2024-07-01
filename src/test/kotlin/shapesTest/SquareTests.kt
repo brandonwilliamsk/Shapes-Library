@@ -27,4 +27,11 @@ class SquareTest {
         assertEquals(Point(2.0, 3.0), square.getPoints()[0])
         assertEquals(Point(5.0, 6.0), square.getPoints()[1])
     }
+    @Test
+    fun testSquareProperties() {
+        val square = Square(Point(1.0, 2.0), 3.0)
+        val points = square.getPoints()
+        val sideLength = points[1].getX() - points[0].getX()
+        assertEquals(sideLength, points[1].getY() - points[0].getY())
+    }
 }

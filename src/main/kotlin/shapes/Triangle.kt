@@ -3,7 +3,7 @@ package shapes
 import geometry.AreaCalculator
 import geometry.Point
 
-class Triangle(private val pointA: Point, private val pointB: Point, private val pointC: Point) : Shape() {
+class Triangle(private val pointA: Point, private val pointB: Point, private val pointC: Point) : shapeAbstract() {
     init {
         val area = AreaCalculator.triangleArea(pointA, pointB, pointC)
         if (area == 0.0) {

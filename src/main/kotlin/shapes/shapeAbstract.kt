@@ -1,7 +1,7 @@
 package shapes
 import geometry.Point
 
-abstract class Shape {
+abstract class shapeAbstract {
     abstract fun move(deltaX: Double, deltaY: Double)
     abstract fun getPoints(): List<Point>
     protected abstract fun calculateArea(): Double

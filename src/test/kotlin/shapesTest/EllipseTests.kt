@@ -1,8 +1,10 @@
 package shapesTest
-import shapes.*
-import geometry.*
-import org.junit.jupiter.api.Assertions.*
+
+import geometry.Point
+import shapes.Ellipse
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import kotlin.test.assertTrue
 
 class EllipseTest {
 
@@ -16,7 +18,8 @@ class EllipseTest {
     @Test
     fun testGetArea() {
         val ellipse = Ellipse(Point(2.0, 3.0), 4.0, 5.0)
-        assertEquals(Math.PI * 4.0 * 5.0, ellipse.getArea())
+        val area = ellipse.getArea()
+        assertEquals(Math.PI * 4.0 * 5.0, area)
     }
 
     @Test
