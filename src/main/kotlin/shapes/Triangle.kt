@@ -3,15 +3,14 @@ package shapes
 import geometry.AreaCalculator
 import geometry.Point
 
-class Triangle(private val pointA: Point, private val pointB: Point, private val pointC: Point) : shapeAbstract() {
+class Triangle(private val pointA: Point, private val pointB: Point, private val pointC: Point) : ShapeAbstract() {
     init {
-        val area = AreaCalculator.triangleArea(pointA, pointB, pointC)
-        if (area == 0.0) {
-            throw IllegalArgumentException("A triangle cannot have an area of 0")
-        }
+        validateArea()
     }
 
     override fun move(deltaX: Double, deltaY: Double) {
+        validateInputIsNumber(deltaX)
+        validateInputIsNumber(deltaY)
         pointA.move(deltaX, deltaY)
         pointB.move(deltaX, deltaY)
         pointC.move(deltaX, deltaY)

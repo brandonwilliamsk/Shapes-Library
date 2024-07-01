@@ -39,4 +39,16 @@ class CircleTest {
             Circle(Point(2.0, 3.0), -1.0)
         }
     }
+    @Test
+    fun testCreateCircleWithNaNRadius() {
+        assertThrows<IllegalArgumentException> {
+            Circle(Point(2.0, 3.0), Double.NaN)
+        }
+    }
+    @Test
+    fun testCreateCircleWithNaNPoint() {
+        assertThrows<IllegalArgumentException> {
+            Circle(Point(Double.NaN, 3.0), 5.0)
+        }
+    }
 }

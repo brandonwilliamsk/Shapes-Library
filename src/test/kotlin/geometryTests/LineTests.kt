@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import geometry.Point
 import geometry.Line
+import org.junit.jupiter.api.assertThrows
 
 class LineTest {
 
@@ -50,5 +51,18 @@ class LineTest {
         line.move(1.0, 1.0)
         assertEquals(Point(2.0, 3.0), line.getPoints()[0])
         assertEquals(Point(4.0, 5.0), line.getPoints()[1])
+    }
+    @Test
+    fun testInvalidPoint1() {
+        assertThrows<IllegalArgumentException> {
+            Line(Point(Double.NaN, 2.0), Point(3.0, 4.0))
+        }
+    }
+
+    @Test
+    fun testInvalidPoint2() {
+        assertThrows<IllegalArgumentException> {
+            Line(Point(1.0, 2.0), Point(Double.POSITIVE_INFINITY, 4.0))
+        }
     }
 }

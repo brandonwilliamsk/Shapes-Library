@@ -1,4 +1,5 @@
 package geometry
+import kotlin.math.abs
 
 object AreaCalculator {
     fun rectangleArea(width: Double, height: Double): Double = width * height
@@ -7,6 +8,6 @@ object AreaCalculator {
         val a = pointA.getX() * (pointB.getY() - pointC.getY())
         val b = pointB.getX() * (pointC.getY() - pointA.getY())
         val c = pointC.getX() * (pointA.getY() - pointB.getY())
-        return Math.abs((a + b + c) / 2)
+        return abs((a + b + c) / 2)
     }
 }

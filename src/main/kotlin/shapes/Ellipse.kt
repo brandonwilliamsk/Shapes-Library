@@ -3,14 +3,18 @@ package shapes
 import geometry.Point
 import geometry.AreaCalculator
 
-open class Ellipse(private val center: Point, private val radiusX: Double, private val radiusY: Double) : shapeAbstract() {
+open class Ellipse(private val center: Point, private val radiusX: Double, private val radiusY: Double) : ShapeAbstract() {
     init {
-        require(radiusX > 0 && radiusY > 0) {
-            "Both radii must be greater than zero"
-        }
+        validateArea()
+        validateRadius(radiusX)
+        validateRadius(radiusY)
+        validateInputIsNumber(radiusX)
+        validateInputIsNumber(radiusY)
     }
 
     override fun move(deltaX: Double, deltaY: Double) {
+        validateInputIsNumber(deltaX)
+        validateInputIsNumber(deltaY)
         center.move(deltaX, deltaY)
     }
 

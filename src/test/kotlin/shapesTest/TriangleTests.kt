@@ -44,4 +44,25 @@ class TriangleTest {
         val triangle = Triangle(Point(0.0, 0.0), Point(4.0, 0.0), Point(0.0, 3.0))
         assertTrue(triangle.getArea() > 0.0)
     }
+    @Test
+    fun testCreateTriangleWithNaN() {
+        assertThrows<IllegalArgumentException> {
+            Triangle(Point(Double.NaN, 0.0), Point(4.0, 0.0), Point(0.0, 3.0))
+        }
+        assertThrows<IllegalArgumentException> {
+            Triangle(Point(0.0, Double.NaN), Point(4.0, 0.0), Point(0.0, 3.0))
+        }
+        assertThrows<IllegalArgumentException> {
+            Triangle(Point(0.0, 0.0), Point(Double.NaN, 0.0), Point(0.0, 3.0))
+        }
+        assertThrows<IllegalArgumentException> {
+            Triangle(Point(0.0, 0.0), Point(4.0, Double.NaN), Point(0.0, 3.0))
+        }
+        assertThrows<IllegalArgumentException> {
+            Triangle(Point(0.0, 0.0), Point(4.0, 0.0), Point(Double.NaN, 3.0))
+        }
+        assertThrows<IllegalArgumentException> {
+            Triangle(Point(0.0, 0.0), Point(4.0, 0.0), Point(0.0, Double.NaN))
+        }
+    }
 }

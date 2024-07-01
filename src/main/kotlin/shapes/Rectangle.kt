@@ -2,15 +2,15 @@ package shapes
 import geometry.*
 import kotlin.math.abs
 
-open class Rectangle(private val topLeft: Point, private val bottomRight: Point) : shapeAbstract() {
+open class Rectangle(private val topLeft: Point, private val bottomRight: Point) : ShapeAbstract() {
 
     init {
-        if (topLeft.getX() == bottomRight.getX() || topLeft.getY() == bottomRight.getY()) {
-            throw IllegalArgumentException("A rectangle cannot have 0 width or height")
-        }
+        validateArea()
     }
 
     override fun move(deltaX: Double, deltaY: Double) {
+        validateInputIsNumber(deltaX)
+        validateInputIsNumber(deltaY)
         topLeft.move(deltaX, deltaY)
         bottomRight.move(deltaX, deltaY)
     }

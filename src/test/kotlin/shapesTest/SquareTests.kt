@@ -54,4 +54,23 @@ class SquareTest {
         val square = Square(Point(1.0, 2.0), 3.0)
         assertTrue(square.getArea() > 0.0)
     }
+    @Test
+    fun testCreateSquareWithNaN() {
+        assertThrows<IllegalArgumentException> {
+            Square(Point(Double.NaN, 2.0), 5.0)
+        }
+        assertThrows<IllegalArgumentException> {
+            Square(Point(1.0, Double.NaN), 5.0)
+        }
+    }
+
+    @Test
+    fun testCreateSquareWithInfinity() {
+        assertThrows<IllegalArgumentException> {
+            Square(Point(Double.POSITIVE_INFINITY, 2.0), 5.0)
+        }
+        assertThrows<IllegalArgumentException> {
+            Square(Point(1.0, Double.NEGATIVE_INFINITY), 5.0)
+        }
+    }
 }

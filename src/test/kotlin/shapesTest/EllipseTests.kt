@@ -5,6 +5,7 @@ import shapes.Ellipse
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
+import shapes.Circle
 
 class EllipseTest {
 
@@ -46,6 +47,18 @@ class EllipseTest {
         }
         assertThrows<IllegalArgumentException> {
             Ellipse(Point(2.0, 3.0), 4.0, -1.0)
+        }
+    }
+    @Test
+    fun testCreateEllipseWithNaNRadius() {
+        assertThrows<IllegalArgumentException> {
+            Ellipse(Point(2.0, 3.0), 5.0, Double.NaN)
+        }
+    }
+    @Test
+    fun testCreateEllipseWithNaNPoint() {
+        assertThrows<IllegalArgumentException> {
+            Ellipse(Point(Double.NaN, 3.0), Double.NaN, 4.0)
         }
     }
 }

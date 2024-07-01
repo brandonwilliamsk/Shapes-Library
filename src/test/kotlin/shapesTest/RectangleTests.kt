@@ -48,4 +48,13 @@ class RectangleTest {
         val rect = Rectangle(Point(1.0, 2.0), Point(4.0, 6.0))
         assertTrue(rect.getArea() > 0.0)
     }
+    @Test
+    fun testCreateRectangleWithNaNDimensions() {
+        assertThrows<IllegalArgumentException> {
+            Rectangle(Point(1.0, 2.0), Point(Double.NaN, 6.0))
+        }
+        assertThrows<IllegalArgumentException> {
+            Rectangle(Point(Double.NaN, 2.0), Point(4.0, 6.0))
+        }
+    }
 }
