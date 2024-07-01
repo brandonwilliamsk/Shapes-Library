@@ -47,44 +47,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build Shapes_Library.executor": "Run",
-    "Gradle.CircleTest.executor": "Run",
-    "Gradle.CircleTest.testCreateCircleWithNegativeRadius.executor": "Run",
-    "Gradle.CircleTest.testGetArea.executor": "Run",
-    "Gradle.EllipseTest.executor": "Run",
-    "Gradle.LineTest.executor": "Run",
-    "Gradle.LineTest.testGetLength.executor": "Run",
-    "Gradle.LineTest.testMove.executor": "Run",
-    "Gradle.PointTest.executor": "Run",
-    "Gradle.RectangleTest.executor": "Run",
-    "Gradle.RectangleTest.testCreateRectangleWithNegativeDimensions.executor": "Run",
-    "Gradle.RectangleTest.testGetArea.executor": "Run",
-    "Gradle.SquareTest.executor": "Run",
-    "Gradle.SquareTest.testCreateSquareWithNegativeSideLength.executor": "Run",
-    "Gradle.SquareTest.testGetArea.executor": "Run",
-    "Gradle.SquareTest.testSquareProperties.executor": "Run",
-    "Gradle.Tests in 'Shapes_Library.test'.executor": "Coverage",
-    "Gradle.TriangleTest.executor": "Run",
-    "Gradle.TriangleTest.testGetArea.executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "Kotlin.PointKt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Subversion.SSH"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build Shapes_Library.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CircleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CircleTest.testCreateCircleWithNegativeRadius.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CircleTest.testGetArea.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.EllipseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LineTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LineTest.testGetLength.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LineTest.testMove.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PointTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PointTest.testClone.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PointTest.testInvalidCoordinates.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RectangleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RectangleTest.testCreateRectangleWithNegativeDimensions.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RectangleTest.testCreateRectangleWithZeroDimensions.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RectangleTest.testGetArea.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SquareTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SquareTest.testCreateSquareWithNegativeSideLength.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SquareTest.testGetArea.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SquareTest.testSquareProperties.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'Shapes_Library.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTest.testCreateTriangleWithZeroArea.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TriangleTest.testGetArea.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.PointKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "/Users/brandonwilliams/.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;/Users/brandonwilliams/.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/kotlin/GeometryTests" />
@@ -96,8 +100,8 @@
       <recent name="shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SquareTest.testCreateSquareWithNegativeSideLength">
-    <configuration name="RectangleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'Shapes_Library.test'">
+    <configuration name="PointTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -110,7 +114,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;shapesTest.RectangleTest&quot;" />
+            <option value="&quot;PointTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -121,7 +125,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RectangleTest.testCreateRectangleWithNegativeDimensions" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PointTest.testClone" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +138,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;shapesTest.RectangleTest.testCreateRectangleWithNegativeDimensions&quot;" />
+            <option value="&quot;geometryTests.PointTest.testClone&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -145,7 +149,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SquareTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PointTest.testInvalidCoordinates" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,7 +162,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;shapesTest.SquareTest&quot;" />
+            <option value="&quot;geometryTests.PointTest.testInvalidCoordinates&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,7 +173,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SquareTest.testCreateSquareWithNegativeSideLength" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RectangleTest.testCreateRectangleWithZeroDimensions" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +186,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;shapesTest.SquareTest.testCreateSquareWithNegativeSideLength&quot;" />
+            <option value="&quot;shapesTest.RectangleTest.testCreateRectangleWithZeroDimensions&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -217,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SquareTest.testCreateSquareWithNegativeSideLength" />
-        <item itemvalue="Gradle.SquareTest" />
         <item itemvalue="Gradle.Tests in 'Shapes_Library.test'" />
-        <item itemvalue="Gradle.RectangleTest" />
-        <item itemvalue="Gradle.RectangleTest.testCreateRectangleWithNegativeDimensions" />
+        <item itemvalue="Gradle.PointTest.testClone" />
+        <item itemvalue="Gradle.PointTest.testInvalidCoordinates" />
+        <item itemvalue="Gradle.PointTest" />
+        <item itemvalue="Gradle.RectangleTest.testCreateRectangleWithZeroDimensions" />
       </list>
     </recent_temporary>
   </component>
@@ -332,14 +336,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-function">
+        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/test/kotlin/shapesTest/TriangleTests.kt</url>
-          <line>19</line>
-          <properties class="shapesTest.TriangleTest" method="testGetArea">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
+          <line>36</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
