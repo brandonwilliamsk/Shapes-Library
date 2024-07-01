@@ -3,6 +3,7 @@ import shapes.*
 import geometry.*
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 
 class CircleTest {
 
@@ -24,5 +25,18 @@ class CircleTest {
         val circle = Circle(Point(2.0, 3.0), 5.0)
         circle.move(1.0, 1.0)
         assertEquals(Point(3.0, 4.0), circle.getPoints()[0])
+    }
+    @Test
+    fun testCreateCircleWithZeroRadius() {
+        assertThrows<IllegalArgumentException> {
+            Circle(Point(2.0, 3.0), 0.0)
+        }
+    }
+
+    @Test
+    fun testCreateCircleWithNegativeRadius() {
+        assertThrows<IllegalArgumentException> {
+            Circle(Point(2.0, 3.0), -1.0)
+        }
     }
 }

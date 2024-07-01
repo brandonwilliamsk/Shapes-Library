@@ -4,7 +4,7 @@ import geometry.Point
 import shapes.Ellipse
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import kotlin.test.assertTrue
+import org.junit.jupiter.api.assertThrows
 
 class EllipseTest {
 
@@ -27,5 +27,25 @@ class EllipseTest {
         val ellipse = Ellipse(Point(2.0, 3.0), 4.0, 5.0)
         ellipse.move(1.0, 1.0)
         assertEquals(Point(3.0, 4.0), ellipse.getPoints()[0])
+    }
+
+    @Test
+    fun testCreateEllipseWithZeroRadii() {
+        assertThrows<IllegalArgumentException> {
+            Ellipse(Point(2.0, 3.0), 0.0, 5.0)
+        }
+        assertThrows<IllegalArgumentException> {
+            Ellipse(Point(2.0, 3.0), 4.0, 0.0)
+        }
+    }
+
+    @Test
+    fun testCreateEllipseWithNegativeRadii() {
+        assertThrows<IllegalArgumentException> {
+            Ellipse(Point(2.0, 3.0), -1.0, 5.0)
+        }
+        assertThrows<IllegalArgumentException> {
+            Ellipse(Point(2.0, 3.0), 4.0, -1.0)
+        }
     }
 }

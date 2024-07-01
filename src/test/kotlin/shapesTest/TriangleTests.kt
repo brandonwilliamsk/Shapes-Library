@@ -3,6 +3,7 @@ import shapes.*
 import geometry.*
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 
 class TriangleTest {
 
@@ -28,5 +29,19 @@ class TriangleTest {
         assertEquals(Point(1.0, 1.0), triangle.getPoints()[0])
         assertEquals(Point(5.0, 1.0), triangle.getPoints()[1])
         assertEquals(Point(1.0, 4.0), triangle.getPoints()[2])
+    }
+
+    @Test
+    fun testCreateTriangleWithZeroArea() {
+        assertThrows<IllegalArgumentException> {
+            Triangle(Point(0.0, 0.0), Point(0.0, 0.0), Point(0.0, 0.0))
+        }
+    }
+
+
+    @Test
+    fun testTriangleAreaGreaterThanZero() {
+        val triangle = Triangle(Point(0.0, 0.0), Point(4.0, 0.0), Point(0.0, 3.0))
+        assertTrue(triangle.getArea() > 0.0)
     }
 }

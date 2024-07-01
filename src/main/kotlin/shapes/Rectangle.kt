@@ -1,9 +1,9 @@
 package shapes
-import geometry.AreaCalculator
-import geometry.Point
+import geometry.*
 import kotlin.math.abs
 
 open class Rectangle(private val topLeft: Point, private val bottomRight: Point) : shapeAbstract() {
+
     init {
         if (topLeft.getX() == bottomRight.getX() || topLeft.getY() == bottomRight.getY()) {
             throw IllegalArgumentException("A rectangle cannot have 0 width or height")
@@ -20,7 +20,9 @@ open class Rectangle(private val topLeft: Point, private val bottomRight: Point)
     override fun calculateArea(): Double {
         val width = abs(bottomRight.getX() - topLeft.getX())
         val height = abs(bottomRight.getY() - topLeft.getY())
-        return AreaCalculator.rectangleArea(width, height)
-    }
+        val area = AreaCalculator.rectangleArea(width, height)
 
+
+        return area
+    }
 }

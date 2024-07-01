@@ -3,6 +3,7 @@ import geometry.*
 import shapes.*
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 
 class SquareTest {
 
@@ -33,5 +34,25 @@ class SquareTest {
         val points = square.getPoints()
         val sideLength = points[1].getX() - points[0].getX()
         assertEquals(sideLength, points[1].getY() - points[0].getY())
+    }
+
+    @Test
+    fun testCreateSquareWithZeroSideLength() {
+        assertThrows<IllegalArgumentException> {
+            Square(Point(1.0, 2.0), 0.0)
+        }
+    }
+
+    @Test
+    fun testCreateSquareWithNegativeSideLength() {
+        assertThrows<IllegalArgumentException> {
+            Square(Point(1.0, 2.0), -1.0)
+        }
+    }
+
+    @Test
+    fun testSquareAreaGreaterThanZero() {
+        val square = Square(Point(1.0, 2.0), 3.0)
+        assertTrue(square.getArea() > 0.0)
     }
 }
