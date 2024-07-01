@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd91db05-8246-417e-81c2-209fd7b11fc4" name="Changes" comment="Project Created">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shapes/Rectangle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shapes/Rectangle.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/shapesTest/CircleTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/shapesTest/CircleTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/shapesTest/EllipseTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/shapesTest/EllipseTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/shapesTest/RectangleTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/shapesTest/RectangleTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shapes/Square.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shapes/Square.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/shapesTest/SquareTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/shapesTest/SquareTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/shapesTest/TriangleTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/shapesTest/TriangleTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +63,7 @@
     "Gradle.RectangleTest.testCreateRectangleWithNegativeDimensions.executor": "Run",
     "Gradle.RectangleTest.testGetArea.executor": "Run",
     "Gradle.SquareTest.executor": "Run",
+    "Gradle.SquareTest.testCreateSquareWithNegativeSideLength.executor": "Run",
     "Gradle.SquareTest.testGetArea.executor": "Run",
     "Gradle.SquareTest.testSquareProperties.executor": "Run",
     "Gradle.Tests in 'Shapes_Library.test'.executor": "Coverage",
@@ -101,31 +97,7 @@
       <recent name="shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'Shapes_Library.test'">
-    <configuration name="CircleTest.testCreateCircleWithNegativeRadius" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;shapesTest.CircleTest.testCreateCircleWithNegativeRadius&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.SquareTest.testCreateSquareWithNegativeSideLength">
     <configuration name="RectangleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -198,6 +170,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="SquareTest.testCreateSquareWithNegativeSideLength" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;shapesTest.SquareTest.testCreateSquareWithNegativeSideLength&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Tests in 'Shapes_Library.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -222,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'Shapes_Library.test'" />
+        <item itemvalue="Gradle.SquareTest.testCreateSquareWithNegativeSideLength" />
         <item itemvalue="Gradle.SquareTest" />
+        <item itemvalue="Gradle.Tests in 'Shapes_Library.test'" />
         <item itemvalue="Gradle.RectangleTest" />
         <item itemvalue="Gradle.RectangleTest.testCreateRectangleWithNegativeDimensions" />
-        <item itemvalue="Gradle.CircleTest.testCreateCircleWithNegativeRadius" />
       </list>
     </recent_temporary>
   </component>

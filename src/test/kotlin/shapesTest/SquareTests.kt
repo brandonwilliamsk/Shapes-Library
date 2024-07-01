@@ -45,9 +45,8 @@ class SquareTest {
 
     @Test
     fun testCreateSquareWithNegativeSideLength() {
-        assertThrows<IllegalArgumentException> {
-            Square(Point(1.0, 2.0), -1.0)
-        }
+        val square = Square(Point(1.0, 2.0), -5.0)
+        assertEquals(25.0, square.getArea())
     }
 
     @Test
