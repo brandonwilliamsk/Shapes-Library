@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cd91db05-8246-417e-81c2-209fd7b11fc4" name="Changes" comment="Merge remote-tracking branch 'origin/Point_Class' into Point_Class&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/geometry/Line.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/geometry/Line.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shapes/Ellipse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shapes/Ellipse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shapes/ShapeAbstract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shapes/ShapeAbstract.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Shapes_Library" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -56,6 +69,7 @@
     &quot;Gradle.EllipseTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.LineTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.LineTest.testGetLength.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LineTest.testInvalidPoint1.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.LineTest.testMove.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.PointTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.PointTest.testClone.executor&quot;: &quot;Run&quot;,
@@ -78,6 +92,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Applications/CS 5700/Shapes_Library&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -100,7 +115,31 @@
       <recent name="shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'Shapes_Library.test'">
+  <component name="RunManager" selected="Gradle.LineTest.testInvalidPoint1">
+    <configuration name="LineTest.testInvalidPoint1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;geometryTests.LineTest.testInvalidPoint1&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="PointTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,30 +212,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RectangleTest.testCreateRectangleWithZeroDimensions" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;shapesTest.RectangleTest.testCreateRectangleWithZeroDimensions&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="Tests in 'Shapes_Library.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -221,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LineTest.testInvalidPoint1" />
         <item itemvalue="Gradle.Tests in 'Shapes_Library.test'" />
         <item itemvalue="Gradle.PointTest.testClone" />
         <item itemvalue="Gradle.PointTest.testInvalidCoordinates" />
         <item itemvalue="Gradle.PointTest" />
-        <item itemvalue="Gradle.RectangleTest.testCreateRectangleWithZeroDimensions" />
       </list>
     </recent_temporary>
   </component>

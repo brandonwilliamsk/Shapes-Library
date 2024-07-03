@@ -1,5 +1,4 @@
 package geometry
-import shapes.*
 class Line(private val point1: Point, private val point2: Point) {
 
     fun validateInputIsNumber(value: Any) {

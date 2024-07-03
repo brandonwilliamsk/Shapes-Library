@@ -1,5 +1,4 @@
 package shapes
-
 import geometry.Point
 import geometry.AreaCalculator
 
